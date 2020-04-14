@@ -27,6 +27,21 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <!--Overriding default Release plugin configuration.By default release plugin has deploy goal. We don't want to deploy so configuring as install-->
+                <configuration>
+                    <goals>install</goals>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+
+    <!--Release plugin Configuration-->
+    <scm>
+        <developerConnection>scm:git:https://github.com/prakashcheckin/al-pet-clinic.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 </project>
