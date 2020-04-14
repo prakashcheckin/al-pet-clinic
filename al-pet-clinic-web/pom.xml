@@ -3,7 +3,7 @@
     <parent>
         <artifactId>al-sfg-pet-clinic</artifactId>
         <groupId>al.guru.springframework</groupId>
-        <version>0.0.1</version>
+        <version>0.0.2-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>al-pet-clinic-web</artifactId>
@@ -12,7 +12,7 @@
         <dependency>
             <artifactId>al-pet-clinic-data</artifactId>
             <groupId>al.guru.springframework</groupId>
-            <version>0.0.1</version>
+            <version>0.0.2-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
