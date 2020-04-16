@@ -2,9 +2,11 @@ package al.guru.springframework.alsfgpetclinic.service.map;
 
 import al.guru.springframework.alsfgpetclinic.model.PetType;
 import al.guru.springframework.alsfgpetclinic.service.PetTypeService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetTypeMapService extends AbstractMapService<PetType, Long> implements PetTypeService {
 
 
