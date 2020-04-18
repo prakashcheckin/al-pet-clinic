@@ -9,6 +9,9 @@ import java.util.Set;
 @Table(name = "pets")
 public class Pet extends BaseEntity{
 
+    @Column(name = "pet_name")
+    private String name;
+
     @ManyToOne
     private PetType petType;
 
@@ -52,5 +55,13 @@ public class Pet extends BaseEntity{
 
     public void setVists(Set<Visit> vists) {
         this.vists = vists;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
