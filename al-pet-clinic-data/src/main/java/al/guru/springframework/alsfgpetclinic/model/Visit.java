@@ -1,11 +1,22 @@
 package al.guru.springframework.alsfgpetclinic.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
 import java.time.LocalDate;
 
+@Entity
+@Table("visits")
 public class Visit extends BaseEntity {
 
+    @Column(name = "date")
     private LocalDate date;
+
+    @Column(name = "description")
     private String description;
+
+    @OneToOne
     private Pet pet;
 
     public LocalDate getDate() {
